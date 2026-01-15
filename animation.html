@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: 0;
+
+    }
+    .container{
+        height: 1000px;
+        width: 1400px;
+        background-color: beige;
+        margin:2px ;
+        padding: 1px;
+
+    }
+    .box{
+        width: 360px;
+        height: 80px;
+        background-color: blue;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        animation: leftMovement  5s ease-in 1s 2  both;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;it is a short hand*/
+    }
+    .box1{
+        width: 360px;
+        height: 80px;
+        background-color: blue;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        align-items: end;
+        animation: leftMovement  5s ease-in 1s 2  both;
+    }
+    @keyframes leftMovement {
+        from{
+            topp:0;
+            left:0;
+        }
+        to{
+            top: 0;
+            left: 1200px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+    
+</body>
+</html>

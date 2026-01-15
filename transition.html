@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 290px;
+        width: 290px;
+        background-color: blanchedalmond;
+        /*transition-property: width;*/
+        transition-property: all;
+        transition-duration: 4s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+    }
+    .box1:hover{
+        width: 1800px;
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

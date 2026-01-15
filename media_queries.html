@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .co{
+        display:flex;
+        border: 1px solid red;
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: aqua;
+       
+    }
+    /*@media(min-width:300) and (max-width:500px){
+        .box1{
+            background-color:green ;
+        }
+    }*/
+    @media (min-width:640px){
+        .co{
+            flex-direction: row;
+        }
+        
+    }
+    @media (max-width:640px) {
+        .co{
+            flex-direction: column;
+        }
+        
+    }
+
+    
+    
+</style>
+<body>
+<div class="co">    
+    <div class="box1">i am a box</div>
+    <div class="box1">i am a box</div>
+    <div class="box1">i am a box</div>
+    <div class="box1">i am a box</div>
+    <div class="box1">i am a box</div>
+</div>
+    
+</body>
+</html>
